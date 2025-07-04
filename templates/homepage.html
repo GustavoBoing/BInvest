@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='stl.css')}}">
+    <title>Document</title>
+</head>
+<body>
+       <header>
+        <h1>BInvest</h1>
+    </header>
+
+    <main>
+        <form action="/" method="post">
+            <input type="text" name="acao_bolsa" placeholder="Digite o código da ação">
+            <input type="submit" value="Consultar">
+        </form>
+
+        {% if erro %}
+            <p class="erro">{{ erro }}</p>
+        {% endif %}
+
+        {% if dados %}
+        <div class="result-container">
+            <img src="{{ dados['logourl'] }}" alt="Logo {{ dados['shortName'] }}">
+            <h2>{{ dados['symbol'] }} - {{ dados['longName'] }}</h2>
+            <p><strong>Preço atual:</strong> <span class="preco">R$ {{ dados['regularMarketPrice'] }}</span></p>
+            <h3>📊 Fundamentos</h3>
+            <p><strong>P/L:</strong> <span class="pl">{{ dados['priceEarnings'] | round(2) }}</span></p>
+            <p><strong>Volume de hoje:</strong> {{ dados['regularMarketVolume'] or "Valor não disponível" }}</p>
+            <p><strong>Maior preço anual:</strong> {{ dados['fiftyTwoWeekHigh'] or "Valor não disponível" }}</p>
+            <p><strong>Menor preço anual:</strong> {{ dados['fiftyTwoWeekLow'] or "Valor não disponível" }}</p>
+
+            {% if dados['priceEarnings'] > 20 %}
+                <p class="alerta">⚠️ Atenção: Ação pode estar cara devido ao alto P/L</p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </main>
+</body>
+</html>
