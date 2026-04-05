@@ -27,7 +27,7 @@ O usuário pode pesquisar ações da bolsa brasileira digitando o ticker do ativ
 - Volume negociado no dia
 - Maior preço anual
 - Menor preço anual
-- Avalia se está caro ou barato 
+- Avalia se a ação está cara ou barata 
 
 
 
