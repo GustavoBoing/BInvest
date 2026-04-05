@@ -88,8 +88,6 @@ VALE3
 BBAS3
 ITUB4
 
----
-
 ### 📈 Melhorias futuras
 
 ---
@@ -100,9 +98,8 @@ Lista de favoritos
 Responsividade mobile
 Busca automática com autocomplete
 
----
 
-## 👨‍💻 Autor
+### 👨‍💻 Autor
 
 ---
 
