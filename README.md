@@ -42,15 +42,14 @@ https://brapi.dev/api/quote/
 A API fornece informações atualizadas de ativos negociados no mercado brasileiro.
 
 
-
 ### 🛠️ Tecnologias utilizadas
 
 ---
 
-HTML5
-CSS3
-JavaScript
-API REST (BRAPI)
+- HTML5
+- CSS3
+- JavaScript
+- API REST (BRAPI)
 
 
 
