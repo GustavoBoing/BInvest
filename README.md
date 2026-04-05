@@ -58,7 +58,9 @@ A API fornece informações atualizadas de ativos negociados no mercado brasilei
 ---
 
 Clone este repositório:
+```
 git clone https://github.com/GustavoBoing/BInvest.git
+```
 Abra a pasta do projeto
 Execute o arquivo main.py no navegador
 
