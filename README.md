@@ -1,4 +1,4 @@
-## 📈 BInvest
+### 📈 BInvest
 
 Sistema local de consulta de ações listadas na B3, desenvolvido para buscar e exibir informações financeiras de ativos brasileiros em tempo real.
 
